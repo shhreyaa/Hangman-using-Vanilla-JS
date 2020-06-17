@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+</head>
+<body>
+    <h1 class="text-center">Hangman</h1>
+    <div class="text-center">
+   
+    <div class="hangman-image" id="hangman-image">
+        <img src="/images/hangman0.png" id="hangman">
+
+
+    </div>
+    <span class= "guess" id="guess">
+        <div class="float-left">Wrong Guesses: <span id='mistakes'>0</span> of 6</div><br>
+        <div class="float-left">Number of games won: <span id='gamesWon'>0</span> </div>
+        <h5>Make your guess</h5>
+    </span>
+    <div id="displayWord"></div>
+    <div id="wordGuess"></div>
+    
+    <div id="container"></div>
+    <div id="keyboard"></div>
+    <div id="win"></div>
+
+    <button class="btn btn-info" onClick="reset()">Reset</button>
+    </div>
+
+
+        
+
+</div>
+<script src='/hangman.js'></script>
+</body>
+</html>
