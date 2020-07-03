@@ -32,6 +32,7 @@ var wins= 0;
 function randomWord() {
   answer = languages[Math.floor(Math.random() * languages.length)];
   return answer;
+  console.log(answer)
 }
  
 function keyboard(){
@@ -150,6 +151,9 @@ function reset() {
   html=""
   console.log(mistakes);
   document.getElementById("keyboard").innerHTML = "";
+  populate=[];
+  document.getElementById("win").innerHTML=""
+
 
 
   randomWord();
@@ -159,9 +163,15 @@ function reset() {
 
   
 }
+function start_game(){
+  start.style.visibility ="hidden";
+  document.getElementById('hangman-game').style.visibility = "visible"
+}
 
 
 keyboard();
 randomWord();
 guessedWord();
+ const start= document.getElementById('start')
+ start.addEventListener("click",start_game)
 
